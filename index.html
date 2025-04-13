@@ -6,8 +6,13 @@
   <title>Your Name - 3D Designer</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: 'Manrope', sans-serif;
       background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
       color: #fff;
@@ -15,6 +20,7 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      padding: 1rem;
     }
 
     .card {
@@ -22,7 +28,7 @@
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-radius: 20px;
-      padding: 3rem;
+      padding: 2rem;
       max-width: 400px;
       width: 100%;
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
@@ -45,7 +51,7 @@
     }
 
     .tagline {
-      font-size: 0.95rem;
+      font-size: 1rem;
       font-weight: 300;
       color: #ccc;
       margin-bottom: 1.5rem;
@@ -76,7 +82,7 @@
       border-radius: 10px;
       padding: 0.8rem;
       color: white;
-      font-size: 0.9rem;
+      font-size: 1rem;
       font-family: inherit;
       outline: none;
     }
@@ -98,6 +104,20 @@
 
     button:hover {
       background: #ddd;
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        padding: 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .tagline {
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
